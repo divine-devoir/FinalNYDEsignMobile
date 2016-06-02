@@ -1,0 +1,355 @@
+
+
+@import 'partials/nav';
+
+
+body{
+  margin:0;
+  color:#cfbea5;
+}
+//homepage----
+//home-page buttons
+
+
+  #home{
+  width:100%;
+  height:100vh;
+  .fctitle{
+    display:inline;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Calligraffitti', cursive;
+    font-size: 80px;
+    color: #aea79e;
+    }
+  h3{
+    text-align: center;
+    color:#aea79e;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Share Tech Mono', ;
+    }
+
+}
+
+
+h2{
+  font-family: 'Share Tech Mono', ;
+  font-size: 25px;
+  }
+
+
+//home-page button
+.button3{
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    background-color: #cfbea5;
+    &:hover{
+        background-color:rgba(188,232,231,.75);
+    }
+  }
+//about sect button
+.button {
+  background-color: #cfbea5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  &:hover{
+    background-color:rgba(188,232,231,.75);
+  }
+  }
+//Home page img
+.seed{
+  display: block;
+  margin-right: auto;
+  }
+//about section styles
+#about{
+      width:100%;
+      height:100vh;
+      //make longer content fit screensize
+      display:table;
+  .clinfo {
+      text-align: center!important;
+      font-family: 'Calligraffitti', cursive;
+      font-size: 50px;
+      color: #aea79e;
+    }
+    }
+
+
+
+    //work section
+
+    //secton full width height
+
+#work{
+  width:100%;
+  height:100vh;
+  margin-top: 125px;
+  display: table;
+      }
+
+
+
+
+    //work section thumbs boxes
+
+#holder {
+  max-width:900px;
+  margin:0 auto; /*holder center aligned*/
+  padding:0;
+  font-size:0;
+  list-style:none;
+  background-color:white;
+
+    li {
+   display: inline-block;
+   width:25%;
+   vertical-align:middle;
+   box-sizing:border-box;
+   margin:0;
+   padding:0;
+
+       }
+  .img-place {
+  display:block;
+  width: 100%;
+  height: auto;
+  border:none;
+  background-color: white;
+       }
+  li:hover .img-place {
+  transform:scale(1.05);
+  transition:all 1s;
+  background-color: white;
+       }
+     }
+
+
+//having problems withs the absolute and relative , leaking into nav or not displaying captions. (needs debugging still )
+     .thumb-holder {
+       display:block;
+       position: relative;
+       overflow:hidden;
+      }
+      .caption-text {
+        display:block;
+        padding:0 30px;
+        box-sizing:border-box;
+       position:absolute;
+        left:0;
+        width:100%;
+        text-align:center;
+        font-size:18px;
+        font-weight:bold;
+        top:40%;
+        color:white;
+        opacity:0;
+    }
+      #holder li:hover .caption-text {
+        transform:translateY(0px);
+        opacity:0.9;
+      }
+//work/inspire button headings
+      .select{
+        background-color: white;
+        text-align: center;
+      }
+
+
+
+//mobile
+@media all and (max-width: 960px){
+  .fctitle{
+    color:#aea79e;
+    font-family: 'Share Tech Mono', ;
+    font-size: 25px;
+    }
+
+  h3{
+    color:#aea79e;
+    font-family: 'Share Tech Mono', ;
+    font-size: 20px;
+  }
+
+  .clinfo  {
+
+    text-align: center!important;
+    font-family: 'Share Tech Mono', !important;
+    font-size: 25px!important;
+    color: #aea79e!important;
+  }
+
+  h2{
+    font-family: 'Share Tech Mono', ;
+    font-size: 15px;
+  }
+  .abtcontent {
+    background-color: #f0dadb;
+    text-align: center;
+    width: 80%;
+    border: 5px solid #bce8e7;
+    border-radius: 25px;
+    margin-left: 8%;
+  }
+  .heading{
+    margin-top: 180px;
+    background-color: #f0dadb;
+    text-align: center;
+    width: 80%;
+    border: 10px solid #bce8e7;
+    border-radius: 25px;
+    margin-left: 8%;
+
+  }
+}
+
+
+//desktop
+@media all and (min-width: 960px){
+  .container{
+    margin-left: 40%;
+    margin-right: auto;
+  }
+  .heading{
+    margin-top: 180px;
+    background-color: #f0dadb;
+    text-align: center;
+    width: 50%;
+    border: 10px solid #bce8e7;
+    border-radius: 25px;
+    margin-left: 26%;
+  }
+  .abtcontent{
+    background-color: #f0dadb;
+    text-align: center;
+    width: 50%;
+    border: 5px solid #bce8e7;
+    border-radius: 25px;
+    margin: 10px 10px 10px 10px;
+    margin-left: 26%
+    }
+}
+
+
+#contact{
+  width:100%;
+  height:100vh;
+    .contact-wrapper{
+      border:80px solid #bce8e7;
+      border-top: none;
+      border-bottom: none;
+      background-color: white;
+      margin-top: 200px;
+      margin-bottom: 100px;
+      max-width: 100%;
+    }
+      .busi{
+        font-size: 30px;
+        font-family: 'Calligraffitti', cursive;
+        text-align: center;
+        color:#aea79e;
+      }
+      .cardtitle{
+        font-size: 20px;
+      }
+      .smallertxt{
+        font-family: 'Calligraffitti', cursive;
+        font-size: 16px;
+       }
+  }
+
+.card{
+  width:340;
+  height: 220;
+  border-radius: 25px;
+  border:8px solid #bce8e7;
+  background-color: #f0dadb;
+  text-align: center;
+    &:hover{
+  background:rgba(188,232,231,.75);
+  border-radius: 25px;
+    }
+    }
+//business card img
+ .fc{
+  margin-right: auto;
+    }
+
+//centers business card mobile
+@media all and (min-width:400px) and (max-width: 960px){
+    .contact-wrapper{
+      border:5px solid white!important;
+    }
+
+    .container{
+      padding-left: 25%;
+      padding-right: 25%;
+      width:50%;
+      //margin-left:8px;
+
+    }
+}
+
+@media all and (min-width:300px)and(max-width: 600px){
+    .contact-wrapper{
+      border:5px solid white!important;
+    }
+
+    .container{
+      padding-left: 12%!important;
+      padding-right: 12%!important;
+      width:50%;
+      //margin-left:8px;
+
+    }
+}
+@media all and (max-width:400px){
+    .contact-wrapper{
+      display: none!important;
+    }
+
+
+
+    .card{
+      display: none!important;
+
+        }
+
+        .fc{
+          display: none!important;
+        }
+        .busi{
+          display: none!important;
+
+        }
+        .fctitle{
+          display: none!important;
+        }
+
+
+}
+    #popupcard {
+    display: none;
+    border-radius: 5px;
+    background-color: #bce8e7;
+    padding: 20px;
+    margin-top: 50px;
+    }
+
+
+//footer
+footer{
+  font-family: 'Share Tech Mono', ;
+  font-size: 20px;
+  color: #aea79e;
+  text-align: center;
+  font-weight: bold;
+  }
